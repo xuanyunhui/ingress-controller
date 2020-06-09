@@ -8,5 +8,5 @@ sed -i -e "s%#syslogAddress#%`echo $SYSLOG_HOST`%g" ${pwd}/conf.json
 sed -i -e "s%#apisixBaseUrl#%`echo $APISIX_BASE_URL`%g" ${pwd}/conf.json
 
 cd /opt/ingress-controller
-exec ./ingress-controller
+exec ./ingress-controller -v 5
 
