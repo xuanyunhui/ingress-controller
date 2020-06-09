@@ -38,7 +38,7 @@ const BETA = "beta"
 const DEV = "dev"
 const TEST = "test"
 const LOCAL = "local"
-const confPath = "/root/ingress-controller/conf.json"
+const confPath = "/opt/ingress-controller/conf.json"
 const AispeechUpstreamKey = "/apisix/customer/upstream/map"
 
 func setEnvironment() {
