@@ -12,7 +12,8 @@ RUN mkdir /root/ingress-controller \
     && rm -rf /go/src/github.com/iresty/ingress-controller \
     && rm -rf /etc/localtime \
     && ln -s  /usr/share/zoneinfo/Hongkong /etc/localtime \
-    && dpkg-reconfigure -f noninteractive tzdata
+    && dpkg-reconfigure -f noninteractive tzdata \
+    && chmod g+ws /root/ingress-controller
 
 WORKDIR /root/ingress-controller
 
